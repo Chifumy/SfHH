@@ -1,57 +1,133 @@
-div#LeelooShop {
-	background-color: #0000006b;
-	z-index: 3;
-	position: absolute;
+div.stats {
+	width: auto;
+	height: auto;
+	position: fixed;
 	top: 0px;
-	left: 0px;
-	right: 0px;
 	bottom: 0px;
+	right: 0px;
+	left: 0px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-} div#LeelooShop > div.LSBox {
-    padding: 25px 10px;
-    background: #ccd7dd url(//myhh.ga/img/png/bg/pattern02);
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.73);
-    border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-    min-width: 380px;
-} div#LeelooShop > div.LSBox > label {
-    width: 203px;
-    color: #689;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-} div#LeelooShop > div.LSBox > input {
-	margin: 12px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid rgba(0,0,0,.73);
-    border-left: 1px solid rgba(0,0,0,.73);
-    padding: 6px 12px;
-} div#LeelooShop > div.LSBox > button {
-	background: linear-gradient(rgb(0, 170, 255) 0px, rgb(0, 102, 136) 50%, rgb(0, 85, 119) 51%, rgb(0, 170, 255) 100%);
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(0, 102, 136);
+	z-index: 6;
+	background: #00000085;
+} #sFORM, #sFADD {
+	width: 300px;
+	max-width: 100%;
+	margin: 1px auto;
+	padding: 0 0 1px 0;
+	box-sizing: border-box;
+	background-image: url(https://hh.hh-content.com/pictures/design/dex_bg_pattern.png),linear-gradient(to top,#572332 0,#572332 1%,#2c1e1c 100%);
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
 	border-radius: 7px;
-	cursor: pointer;
-	text-decoration: none;
+	-webkit-box-shadow: inset 0 0 40px 15px #662034;
+	-moz-box-shadow: inset 0 0 40px 15px #662034;
+	box-shadow: inset 0 0 40px 15px #662034;
+	margin-bottom: 25px;
+} h4 {
+	width: 100%;
+	margin: -25px 0 0 0;
+	line-height: 49.23px;
 	text-align: center;
-	line-height: 31px;
-	box-shadow: rgba(255, 255, 255, 0.8) -1px 2px 1px 1px inset, rgb(0, 85, 119) 1px -2px 1px 3px inset, rgba(0, 51, 68, 0.7) 0px 3px 3px 0px;
-	padding: 6px 16px;
-	margin-top: 5px;
-} div#LeelooShop > div.LSBox > button[disabled] {
-    background: linear-gradient(180deg,#eee 0,#aaa 50%,#bbb 51%,#eee 100%);
-    border-color: #ccc;
-    box-shadow: -1px 2px 1px 1px rgba(255,255,255,.8) inset, 1px -2px 1px 3px rgba(170,170,170,.4) inset, 0 3px 3px 0 rgba(102,102,102,.73);
-    cursor: default;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: .22px;
+	color: #ffb827;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -2px -2px 5px rgba(255,159,0,.4), 2px -2px 5px rgba(255,159,0,.4), -2px 2px 5px rgba(255,159,0,.4), 2px 2px 5px rgba(255,159,0,.4), 0 0 10px rgba(255,159,0,.4);
+} div#sFORM > ul {
+	padding: 10px 30px;
+} div#sFORM > ul > li, div#sFADD > ul > li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+} div#sFORM > ul > li > label {
+	display: block;
+	position: relative;
+	z-index: 15;
+	margin-bottom: -10px;
+	padding-left: 7px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .22px;
+	color: #ffb827;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -2px -2px 5px rgba(255,159,0,.4), 2px -2px 5px rgba(255,159,0,.4), -2px 2px 5px rgba(255,159,0,.4), 2px 2px 5px rgba(255,159,0,.4), 0 0 10px rgba(255,159,0,.4);
+} div#sFORM > ul > li > input {
+	width: 100%;
+	height: 38px;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 12px;
+	border: 1px solid #ffa23e;
+	background-color: rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 2px 0 #c61f52, 0 0 13px rgba(159,7,58,.6), 0 0 13px rgba(159,7,58,.95);
+	-moz-box-shadow: 0 2px 0 #c61f52,0 0 13px rgba(159,7,58,.6),0 0 13px rgba(159,7,58,.95);
+	box-shadow: 0 2px 0 #c61f52, 0 0 13px rgba(159,7,58,.6), 0 0 13px rgba(159,7,58,.95);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+} div#sFORM > ul > li > span {
+	position: relative;
+	float: right;
+	margin-right: 35px;
+} div#sFORM > ul > li > span > img {
+	height: 32px;
+	position: absolute;
+	margin-top: -35px;
+} div#sFADD > ul {
+	padding: 0px;
+	width: 95%;
+	margin: 0 auto 10px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: no-wrap;
+	-moz-flex-wrap: no-wrap;
+	-ms-flex-wrap: no-wrap;
+	flex-wrap: no-wrap;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+	-ms-flex-pack: space-between;
+	-webkit-align-content: center;
+	-moz-align-content: center;
+	-ms-align-content: center;
+	align-content: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-align-self: center;
+	-moz-align-self: center;
+	-ms-align-self: center;
+	align-self: center;
+} div#sFADD > ul > li {
+	height: 29px;
+	cursor: pointer;
+	padding: 0 7px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #fc9b3f;
+	-webkit-box-shadow: 0 0 10px rgba(159,7,58,.6);
+	-moz-box-shadow: 0 0 10px rgba(159,7,58,.6);
+	box-shadow: 0 0 10px rgba(159,7,58,.6);
+	background-color: rgba(0,0,0,.15);
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .22px;
+	color: #fff;
+	-webkit-text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
+	-moz-text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
+	text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
 }
