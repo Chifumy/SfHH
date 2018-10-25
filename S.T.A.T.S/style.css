@@ -1,0 +1,57 @@
+div#LeelooShop {
+	background-color: #0000006b;
+	z-index: 3;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+} div#LeelooShop > div.LSBox {
+    padding: 25px 10px;
+    background: #ccd7dd url(//myhh.ga/img/png/bg/pattern02);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.73);
+    border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+    min-width: 380px;
+} div#LeelooShop > div.LSBox > label {
+    width: 203px;
+    color: #689;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+} div#LeelooShop > div.LSBox > input {
+	margin: 12px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.73);
+    border-left: 1px solid rgba(0,0,0,.73);
+    padding: 6px 12px;
+} div#LeelooShop > div.LSBox > button {
+	background: linear-gradient(rgb(0, 170, 255) 0px, rgb(0, 102, 136) 50%, rgb(0, 85, 119) 51%, rgb(0, 170, 255) 100%);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(0, 102, 136);
+	border-radius: 7px;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	line-height: 31px;
+	box-shadow: rgba(255, 255, 255, 0.8) -1px 2px 1px 1px inset, rgb(0, 85, 119) 1px -2px 1px 3px inset, rgba(0, 51, 68, 0.7) 0px 3px 3px 0px;
+	padding: 6px 16px;
+	margin-top: 5px;
+} div#LeelooShop > div.LSBox > button[disabled] {
+    background: linear-gradient(180deg,#eee 0,#aaa 50%,#bbb 51%,#eee 100%);
+    border-color: #ccc;
+    box-shadow: -1px 2px 1px 1px rgba(255,255,255,.8) inset, 1px -2px 1px 3px rgba(170,170,170,.4) inset, 0 3px 3px 0 rgba(102,102,102,.73);
+    cursor: default;
+}
