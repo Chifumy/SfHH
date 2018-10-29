@@ -14,6 +14,11 @@ div.stats {
 	align-items: center;
 	z-index: 6;
 	background: #00000085;
+} .border {
+	background-image: linear-gradient(180deg,#ffa23e,#c41b53);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 } #sFORM, #sFADD {
 	width: 300px;
 	max-width: 100%;
@@ -28,18 +33,6 @@ div.stats {
 	-moz-box-shadow: inset 0 0 40px 15px #662034;
 	box-shadow: inset 0 0 40px 15px #662034;
 	margin-bottom: 25px;
-	position: relative;
-} #sFORM:before, #sFADD:before {
-	content: '';
-	width: 300px;
-	height: 100%;
-	position: absolute;
-	top: 7px;
-	left: -1px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	background-image: linear-gradient(180deg,#ffa23e,#c41b53);
 } h4 {
 	width: 100%;
 	margin: -25px 0 0 0;
