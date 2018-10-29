@@ -77,6 +77,14 @@ div.stats {
 	-moz-outline: 0;
 	-ms-outline: 0;
 	-o-outline: 0;
+	-webkit-box-shadow: unset;
+	-moz-box-shadow: unset;
+	box-shadow: unset;
+	transform: translateY(-1px);
+	-webkit-transition: box-shadow 90ms ease-in-out;
+	-moz-transition: box-shadow 90ms ease-in-out;
+	-o-transition: box-shadow 90ms ease-in-out;
+	transition: box-shadow 90ms ease-in-out;
 } div#sFORM > ul {
 	padding: 10px 30px;
 	padding-bottom: 15px;
