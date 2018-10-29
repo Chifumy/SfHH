@@ -96,9 +96,9 @@ div.stats {
 	position: absolute;
 	margin-top: -35px;
 } div#sFADD > ul {
-	padding: 0px;
+	padding: 25px 10px 10px 10px;
 	width: 95%;
-	margin: 0 auto 10px;
+	margin: 0 0 0 2.5%;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
