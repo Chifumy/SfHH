@@ -51,8 +51,34 @@ div.stats {
 	position: absolute;
 } div#sFORM > button {
 	float: right;
-	margin: 3px 5px;
-	border-radius: 4px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	padding: 5px 25px;
+	color: #fff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-box-shadow: 0 3px 0 rgba(13,22,25,.6), inset 0 3px 0 #6df0ff;
+	-moz-box-shadow: 0 3px 0 rgba(13,22,25,.6),inset 0 3px 0 #6df0ff;
+	box-shadow: 0 3px 0 rgba(13,22,25,.6), inset 0 3px 0 #6df0ff;
+	border: 1px solid #000;
+	background-color: #000;
+	background-image: linear-gradient(to top,#008ed5 0,#05719c 100%);
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition: box-shadow 90ms ease-in-out;
+	-moz-transition: box-shadow 90ms ease-in-out;
+	-o-transition: box-shadow 90ms ease-in-out;
+	transition: box-shadow 90ms ease-in-out;
+} div#sFORM > button:active:active, div#sFORM > button:active:focus, div#sFORM > button:active:visited {
+	outline: 0;
+	-webkit-outline: 0;
+	-moz-outline: 0;
+	-ms-outline: 0;
+	-o-outline: 0;
+} div#sFORM > button[disabled] {
+	display: none;
 } div#sFORM > ul {
 	padding: 10px 30px;
 	padding-bottom: 15px;
