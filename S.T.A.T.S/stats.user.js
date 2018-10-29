@@ -37,7 +37,7 @@ const up= async(ordre, statOfcount, compteur, cur)=> {
                     cur++;
                     if(cur<statOfcount.length) {
                         compteur=0;
-                        run(ordre, statOfcount, compteur, cur);
+                        up(ordre, statOfcount, compteur, cur);
                     } else {
                         window.location.reload(true);
                         console.log("end2");
