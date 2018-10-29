@@ -55,9 +55,9 @@ div.stats {
 	border-radius: 4px;
 } div#sFORM > ul {
 	padding: 10px 30px;
-	padding: 10px 30px;
 	padding-bottom: 15px;
 	margin-bottom: 0px;
+	min-height: 49px;
 } div#sFORM > ul > li, div#sFADD > ul > li {
 	list-style-type: none;
 	margin: 0px;
