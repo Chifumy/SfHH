@@ -71,7 +71,7 @@ div.stats {
 	-moz-transition: box-shadow 90ms ease-in-out;
 	-o-transition: box-shadow 90ms ease-in-out;
 	transition: box-shadow 90ms ease-in-out;
-} div#sFORM > button:active:active, div#sFORM > button:active:focus, div#sFORM > button:active:visited, div#sFORM > button[disabled] {
+} div#sFORM > button:active, div#sFORM > button:focus, div#sFORM > button:visited, div#sFORM > button[disabled] {
 	outline: 0;
 	-webkit-outline: 0;
 	-moz-outline: 0;
