@@ -10,7 +10,7 @@
 // @match       http*://nutaku.haremheroes.com/activities*
 // @author      Leeloo (Discord: <@412738477797539841>)
 // @copyright   2018, Leeloo
-// @downloadURL 
+// @downloadURL https://github.com/Chifumy/SfHH/raw/master/S.H.A.Q.user.js
 // ==/UserScript==
 
 const pURI= ()=> {
