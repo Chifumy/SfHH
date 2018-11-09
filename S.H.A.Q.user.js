@@ -101,6 +101,22 @@ $("document").ready(()=> {
             });
         }
     } else if(a.tab=="contests") {
-        console.log("Défi!");
+        let ids= [];
+        var Gr= (a,b)=> {
+            $.ajax({
+                type: "POST",
+                url: '/ajax.php',
+                data: {class:"Contest", action:"give_reward", id_contest:a[b]},
+                success: (i)=> {
+                    b++;
+                    if(b<a.length) { Gr(a,b); }
+                    else { window.location.reload(true); }
+                }
+            });
+        };
+        $('#contests > div > div.left_part > div > div:has(> div.contest_header.ended > div.personal_rewards > button:not([style^="display"]))').each((a,b)=> {
+            ids.push($(b).attr('id_contest'));
+        });
+        if(ids.length>0) { Gr(ids, 0); }
     }
 });
