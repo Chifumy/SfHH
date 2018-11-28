@@ -29,7 +29,7 @@ const up= async(ordre, statOfcount, compteur, cur)=> {
         $.ajax({
             type: "POST",
             url: '/ajax.php',
-            data: {'class':'Hero', 'carac': ordre[cur], 'action':'pay_up_carac'},
+            data: {'class':'Hero', 'carac': ordre[cur], 'action':'update_stats'},
             success: (a)=> {
                 if(a.success) {
                     up(ordre, statOfcount, compteur, cur);
