@@ -18,7 +18,7 @@ const Harvesting= (index)=> {
     $.ajax({
         type: "POST",
         url: '/ajax.php',
-        data: {'class':'Girl', 'who': HaGirls[index].gData['id_girl'], 'action':'get_salary'},
+        data: {'class':'Girl', 'which': HaGirls[index].gData['id_girl'], 'action':'get_salary'},
         success: (i)=> {
             console.log(i);
             index++;
