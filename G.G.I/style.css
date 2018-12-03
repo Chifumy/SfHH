@@ -1,0 +1,25 @@
+body {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+height: 100%;
+margin: 0px;
+padding: 0px;
+} body > div.ava {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+height: 100%;
+} body > div.ava > a > img {
+max-height: 100%;
+} body > div.ico {
+max-height: 100%;
+} body > div.ico > a > img {
+height: 115px;
+}
