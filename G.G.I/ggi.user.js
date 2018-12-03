@@ -10,7 +10,7 @@
 // @author      Leeloo (Discord: <@412738477797539841>)
 // ==/UserScript==
 
-const baseURI= 'https://raw.githubusercontent.com/Chifumy/SfHH/master/S.T.A.T.S/';
+const baseURI= 'https://raw.githubusercontent.com/Chifumy/SfHH/master/G.G.I/';
 
 const init= ()=> {
     $.ajax({
