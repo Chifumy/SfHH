@@ -20,6 +20,8 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+} body > div.ico > a {
+  padding: 3px;
 } body > div.ico > a > img {
   max-height: 115px;
 }
