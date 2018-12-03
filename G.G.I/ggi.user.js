@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name        G.G.I
+// @description Get girl image
+// @version     0.0.1
+// @grant       unsafeWindow
+// @grant       GM_xmlhttpRequest
+// @grant       GM.xmlHttpRequest
+// @require     https://code.jquery.com/jquery-2.2.1.min.js
+// @match       http*://hh.hh-content.com/pictures/girls/*/
+// @author      Leeloo (Discord: <@412738477797539841>)
+// ==/UserScript==
+
 const baseURI= 'https://raw.githubusercontent.com/Chifumy/SfHH/master/S.T.A.T.S/';
 
 const init= ()=> {
