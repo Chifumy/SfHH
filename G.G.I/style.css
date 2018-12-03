@@ -1,33 +1,25 @@
 body {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-content: center;
-align-items: center;
-height: 100%;
-margin: 0px;
-padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0px;
 } body > div.ava {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-content: center;
-align-items: center;
-height: 100%;
-} body > div.ava > a {
-height: 100%;
-} body > div.ava > a > img {
-max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 } body > div.ico {
-height: 100%;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 } body > div.ico > a > img {
-max-height: 115px;
+  max-height: 115px;
 }
