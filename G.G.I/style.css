@@ -19,7 +19,13 @@ height: 100%;
 } body > div.ava > a > img {
 max-height: 100%;
 } body > div.ico {
-max-height: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
 } body > div.ico > a > img {
-height: 115px;
+max-height: 115px;
 }
