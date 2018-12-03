@@ -34,8 +34,8 @@ body {
   border-radius: 50%;
   -webkit-tap-highlight-color: transparent;
   position: absolute;
-  top: calc(50% - 24px);
-  left: calc(50% - 24px);
+  top: 5px;
+  left: 5px;
 } #btn-download:hover {
   background: rgba(34, 50, 84, 0.03);
 } #btn-download svg {
