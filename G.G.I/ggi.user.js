@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        G.G.I
 // @description Get girl image
-// @version     0.0.1
+// @version     0.0.3
 // @grant       unsafeWindow
 // @grant       GM_xmlhttpRequest
 // @grant       GM.xmlHttpRequest
@@ -16,8 +16,14 @@ const init= ()=> {
     $.ajax({
         url: `${baseURI}style.css`,
         success: (css)=> {
-            $('body').append(`<div class="ava"></div><div class="ico"></div><style>${css}</style>`);
-			run();
+            $('body').append(`<style>${css}</style>`);
+            $.ajax({
+                url: `${baseURI}index.html`,
+                success: (html)=> {
+                    $('body').append(`${html}`);
+                    run();
+                }
+            });
         }
     });
 };
@@ -28,6 +34,29 @@ const run= ()=> {
 	for(let a=0;a<5;a++) {
         $('body > div.ava').append(`<a href="${path}ava${a}.png" download="${id}.ava.${a}.png"><img src="${path}ava${a}.png"/></a>`);
         $('body > div.ico').append(`<a href="${path}ico${a}.png" download="${id}.ico.${a}.png"><img src="${path}ico${a}.png"/></a>`);
+    }
+    window.setTimeout(()=> {
+        $('img').each((a,b)=> {
+            if(b.naturalHeight<1||b.naturalWidth<1) {
+                $(b).parent().remove();
+            }
+        });
+    }, 700);
+    $("#btn-download").click(function() {
+        if($(this).attr('class')!=="downloaded") {
+            $(this).toggleClass("downloaded");
+            download($('a').toArray(), 0);
+        }
+    });
+};
+
+const download= (list, index)=> {
+    $(list[index]).get(0).click();
+    index++;
+    if(index<list.length) {
+        window.setTimeout(()=> {
+            download(list, index);
+        }, 150);
     }
 };
 
