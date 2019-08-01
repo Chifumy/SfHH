@@ -41,6 +41,7 @@ body > div.ava {
 	position: absolute;
 	top: 5px;
 	left: 5px;
+	z-index: 10;
 } #btn-download:hover {
 	background: rgba(34, 50, 84, 0.03);
 } #btn-download svg {
